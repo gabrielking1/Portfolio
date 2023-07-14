@@ -1,0 +1,839 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Portfolio </title>
+
+    <link rel="icon" type="image/x-icon" href="/static/assets/images/logom.png">
+
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/assets/css/line-awesome.min.css">   
+     <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/assets/css/animate.min.css">
+    <link rel="stylesheet" href="/static/assets/css/smooth-scrollbar.css">
+    <link rel="stylesheet" href="/static/assets/css/lightbox.min.css">
+
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <link rel="stylesheet" href="/static/assets/css/responsive.css">
+    <style>
+        alert {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+        }
+        
+        .alert-success {
+            color: white;
+            background-color: #4CAF50 ;
+            border-color: #c3e6cb;
+        }
+        
+        .alert-info {
+            color: white;
+            background-color: #ff9800;
+            border-color: #bee5eb;
+        }
+        
+        .alert-warning {
+            color: black;
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+        }
+        
+        .alert-danger {
+            color: white;
+            background-color: #f44336;
+            border-color: #f5c6cb;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="page-loader">
+        <div class="bounceball"></div>
+    </div>
+
+    <span class="icon-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div class="global-color">
+        <span class="setting-toggle">
+            <i class="las la-cog"></i>
+        </span>
+        <div class="inner">
+            <div class="overlay"></div>
+            <div class="global-color-option">
+                <span class="close-settings">
+                    <i class="las la-times"></i>
+                </span>
+                <h2>Configuration</h2>
+                <div class="global-color-option-inner">
+                    <p>Colors</p>
+                    <div class="color-boxed">
+                        <a href="#" class="clr-active" onclick="color1();"></a>
+                        <a href="#" onclick="color2();"></a>
+                        <a href="#" onclick="color3();"></a>
+                        <a href="#" onclick="color4();"></a>
+                        <a href="#" onclick="color5();"></a>
+                        <a href="#" onclick="color6();"></a>
+                        <a href="#" onclick="color7();"></a>
+                        <a href="#" onclick="color8();"></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive-sidebar-menu">
+        <div class="overlay"></div>
+        <div class="sidebar-menu-inner">
+            <div class="menu-wrap">
+                <p>Menu</p>
+                <ul class="menu scroll-nav-responsive d-flex">
+                    <li>
+                        <a class="scroll-to" href="#home">
+                            <i class="las la-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#about">
+                            <i class="lar la-user"></i> <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#resume">
+                            <i class="las la-briefcase"></i> <span>Resume</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#services">
+                            <i class="las la-stream"></i> <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#skills">
+                            <i class="las la-shapes"></i> <span>Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#portfolio">
+                            <i class="las la-grip-vertical"></i> <span>Portfolios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#testimonial">
+                            <i class="lar la-comment"></i> <span>Testimonial</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#contact">
+                            <i class="las la-envelope"></i> <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="sidebar-social">
+                <p>Social</p>
+                <ul class="social-links d-flex align-items-center">
+                    <li>
+                        <a href="https://twitter.com/GabrielFalade"><i class="lab la-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gbenga-falade-941b46173/"><i class="lab la-linkedin"></i></a>
+                    </li>
+                   
+                    <li>
+                        <a href="https://github.com/gabrielking1"><i class="lab la-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <ul class="menu scroll-nav d-flex">
+        <li>
+            <a class="scroll-to" href="#home">
+                <span>Home</span> <i class="las la-home"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#about">
+                <span>About</span> <i class="lar la-user"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#resume">
+                <span>Resume</span> <i class="las la-briefcase"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#services">
+                <span>Services</span> <i class="las la-stream"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#skills">
+                <span>Skills</span> <i class="las la-shapes"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#portfolio">
+                <span>Portfolios</span> <i class="las la-grip-vertical"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#testimonial">
+                <span>Testimonial</span> <i class="lar la-comment"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#contact">
+                <span>Contact</span> <i class="las la-envelope"></i>
+            </a>
+        </li>
+    </ul>
+
+    <div class="left-sidebar">
+        <div class="sidebar-header d-flex align-items-center justify-content-between">
+            <img src="{% static 'assets/images/Gablogo.png' %}" height = "30px" alt="Logo">
+            <span class="designation">Web Designer & Developer</span>
+        </div>
+        <img class="me" src="{% static 'assets/images/gee333.jpg' %}" height = "400px" width = "400px" alt="Me">
+        <h2 class="email">princegeestar@gmail.com</h2>
+        <h2 class="address">Lagos, NG</h2>
+        <p class="copyright">&copy; {% now "Y"%} Gabriel. All Rights Reserved</p>
+        <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+            <li>
+                <a href="https://twitter.com/GabrielFalade"><i class="lab la-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/gbenga-falade-941b46173/"><i class="lab la-linkedin"></i></a>
+            </li>
+           
+            <li>
+                <a href="https://github.com/gabrielking1"><i class="lab la-github"></i></a>
+            </li>
+        </ul>
+        <a href="https://wa.me/+2347067208917/?text=Hello%20Gabriel" class="theme-btn">
+            <i class="las la-envelope"></i> Hire Me!
+        </a>
+    </div>
+
+    <main class="drake-main">
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <div class="left-sidebar">
+                    <div class="sidebar-header d-flex align-items-center justify-content-between">
+                        <img src="{% static 'assets/images/Gablogo.png' %}" height = "30px" alt="Logo">
+                        <span class="designation">Web Designer & Developer</span>
+                    </div>
+                    <img class="me" src="{% static 'assets/images/gee333.jpg' %}" height = "400px" width = "400px" alt="Me">
+                    <h2 class="email">princegeestar@gmail.com</h2>
+                    <h2 class="address">Lagos, NG</h2>
+                    <p class="copyright">&copy; {% now "Y"%} Gabriel. All Rights Reserved</p>
+                    <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                        <li>
+                            <a href="https://twitter.com/GabrielFalade"><i class="lab la-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/gbenga-falade-941b46173/"><i class="lab la-linkedin"></i></a>
+                        </li>
+                       
+                        <li>
+                            <a href="https://github.com/gabrielking1"><i class="lab la-github"></i></a>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/+2347067208917/?text=Hello%20Gabriel" class="theme-btn">
+                        <i class="las la-envelope"></i> Hire Me!
+                    </a>
+                </div>
+
+                <section class="hero-section page-section scroll-to-page" id="home">
+
+                    <div class="custom-container">
+                        <div class="hero-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-home"></i> Introduce
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Hi, i am <span>Gabriel</span>, Web Designer and Developer</h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">As a web designer and developer, my specialty lies in crafting visually appealing designs and writing efficient code to bring them to life. I have a genuine passion for my work, and I strive to make it as straightforward as possible!</p>
+                            <a href="#portfolio" 
+                                class="go-to-project-btn scroll-to scroll-animation" 
+                                data-animation="rotate_up">
+                                <img src="{% static 'assets/images/round-text.png' %}" alt="Rounded Text">
+                                <i class="las la-arrow-down"></i>
+                            </a>
+        
+                            <div class="facts d-flex">
+                                <div class="left scroll-animation" data-animation="fade_from_left">
+                                    <h1>4+</h1>
+                                    <p>Years of <br>Experience</p>
+                                </div>
+                                <div class="right scroll-animation" data-animation="fade_from_right">
+                                    <h1>15+</h1>
+                                    <p>projects completed for  <br> different clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </section>
+        
+                <section class="about-area page-section scroll-to-page" id="about">
+                    <div class="custom-container">
+                        <div class="about-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-user"></i> About
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">An even better story <br>
+                                    is the foundation  <span>of every great design</span></h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">Since I started my journey as a web developer 4 years ago, 
+                                I have worked remotely for several agencies, consulted for numerous startups, and collaborated with many talented individuals to develop digital products for both business and consumer use. 
+                                I possess a quiet confidence and a natural curiosity that fuels my drive to continuously enhance my skills and knowledge, tackling design and development challenges one problem at a time.</p>
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="resume-area page-section scroll-to-page" id="resume">
+                    <div class="custom-container">
+                        <div class="resume-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-briefcase"></i> Resume
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Education & <span>Experience</span></h1>
+                            </div>
+        
+                            <div class="resume-timeline">
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">2022 - Present</span>
+                                    <h2>Web Desinger & Developer</h2>
+                                    <p>Freelancer</p>
+                                    <h2>Backend Developer</h2>
+                                    <p>Espn20 Football Betting Website</p>
+                                </div>
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="gate">2019 - 2021</span>
+                                    <h2>Web Developer & Co-Founder</h2>
+                                    <p>CTR Technology</p>
+                                    <h2>Web Designer</h2>
+                                    <p>Freelance</p>
+                                    <h2>IT Manager</h2>
+                                    <p>ARM Pensions</p>
+                                </div>
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">2021 - 2023</span>
+                                    <h2>Higher National Diploma </h2>
+                                    <p> Computer Science </p>
+                                    <p>The Federal Polytechnic Ede, Osun State</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="services-area page-section scroll-to-page" id="services">
+                    <div class="custom-container">
+                        <div class="services-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-stream"></i> Services
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">My <span>Specializations</span></h1>
+                            </div>
+        
+                            <div class="services-items">
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-bezier-curve"></i>
+                                    <h2>Website Design</h2>
+                                    <p>I design Website using HTML and CSS</p>
+                                    
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-code"></i>
+                                    <h2>Development</h2>
+                                    <p>I build website go live with Django, HTMX, Pyscript and Javascript</p>
+                                   
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-bezier-curve"></i>
+                                    <h2>Database </h2>
+                                    <p>I am an expert in MySqlte and PostgreSql</p>
+                                   
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="skills-area page-section scroll-to-page" id="skills">
+                    <div class="custom-container">
+                        <div class="skills-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-shapes"></i> my skills
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">My <span>Advantages</span></h1>
+                            </div>
+        
+                            <div class="row skills text-center">
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="{% static 'assets/images/dj.png' %}" height = "65px" alt="Django">
+                                            <h1 class="percent">92%</h1>
+                                        </div>
+                                        <p class="name">Django</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="{% static 'assets/images/py.png' %}" height = "65px" alt="Python">
+                                            <h1 class="percent">85%</h1>
+                                        </div>
+                                        <p class="name">Python</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="{% static 'assets/images/bg.png' %}" height = "65px" alt="HTMX">
+                                            <h1 class="percent">90%</h1>
+                                        </div>
+                                        <p class="name">HTMX</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="{% static 'assets/images/js.png' %}" height = "65px" alt="Javascript">
+                                            <h1 class="percent">90%</h1>
+                                        </div>
+                                        <p class="name">Javascript</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="{% static 'assets/images/pyu.png' %}" height = "65px" alt="Pyscript">
+                                            <h1 class="percent">86%</h1>
+                                        </div>
+                                        <p class="name">Pyscript</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="{% static 'assets/images/post1.png' %}" height = "65px" w alt="PostgreSql">
+                                            <h1 class="percent">90%</h1>
+                                        </div>
+                                        <p class="name">PostgreSql</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="portfolio-area page-section scroll-to-page" id="portfolio">
+                    <div class="custom-container">
+                        <div class="portfolio-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-grip-vertical"></i> portfolio
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Featured <span>Projects</span></h1>
+                            </div>
+        
+                            <div class="row portfolio-items">
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-full">
+                                        <div class="portfolio-item-inner">
+                                            <a href="/static/assets/images/home (1).png" data-lightbox="example-1">
+                                                <img src="{% static 'assets/images/home (1).png' %}" alt="Portfolio">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Django</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Javascript</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">HTML/CSS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">FPE Coding Community</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="/static/assets/images/home (3).png" data-lightbox="example-1">
+                                                <img src="{% static 'assets/images/home (3).png' %}" alt="Portfolio">
+                                            </a>
+
+                                            <img src="{% static 'assets/images/home (3).png' %}" alt="Portfolio">
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">HTML/CSS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Django</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">FPE CC question Page</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="/static/assets/images/home (4).png" data-lightbox="example-1">
+                                                <img src="{% static 'assets/images/home (4).png' %}" alt="Portfolio">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">HTML/CSS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Django</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">FPE CC Profile page</a></h2>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                <div class="row portfolio-items">
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-full">
+                                        <div class="portfolio-item-inner">
+                                            <a href="/static/assets/images/food (1).png" data-lightbox="example-2">
+                                                <img src="{% static 'assets/images/food (1).png' %}" alt="Portfolio">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Django</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Javascript</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">HTML/CSS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">Online Food Ordering System</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-4 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="/static/assets/images/food (2).png" data-lightbox="example-2">
+                                                <img src="{% static 'assets/images/food (2).png' %}" alt="Portfolio">
+                                            </a>
+
+                                            <img src="{% static 'assets/images/food (2).png' %}" alt="Portfolio">
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">HTML/CSS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Django</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">Product details</a></h2>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="/static/assets/images/food (3).png" data-lightbox="example-2">
+                                                <img src="{% static 'assets/images/food (3).png' %}" alt="Portfolio">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">HTML/CSS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Django</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">Cart</a></h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="/static/assets/images/food (4).png" data-lightbox="example-2">
+                                                <img src="{% static 'assets/images/food (4).png' %}" alt="Portfolio">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">HTML/CSS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Django</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">Order Lists</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="testimonial-area page-section scroll-to-page" id="testimonial">
+                    <div class="custom-container">
+                        <div class="testimonial-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-comment"></i> testimonial
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Held in high <span> regard by Clients</span></h1>
+                            </div>
+        
+                            <div class="testimonial-slider-wrap scroll-animation" data-animation="fade_from_bottom">
+                                <div class="owl-carousel testimonial-slider owl-theme">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="{% static 'assets/images/dan.jpg' %}" alt="portfolio">
+                                                <div class="right">
+                                                    <h3>Daniel Omilegan </h3>
+                                                    <p class="designation">CEO of <span>CTR Technologies</span></p>
+                                                </div>
+                                            </div>
+                                            <p>“Gabriel is a highly skilled developer who brings creativity, professionalism, and expertise to the table. 
+                                                I was pleasantly surprised by the exceptional quality of the product delivered at a flexible price point. I
+                                                 would definitely recommend Gabriel's services.”</p>
+        
+                                            <a href="#" class="project-btn">Project</a>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="{% static 'assets/images/gospelu.jpg' %}" alt="portfolio">
+                                                <div class="right">
+                                                    <h3>Israel Olaniran</h3>
+                                                    <p class="designation">CEO of <span>Holanzy</span></p>
+                                                </div>
+                                            </div>
+                                            <p>“It was a genuine pleasure working with Gabriel, and we eagerly anticipate the opportunity to collaborate with him again.
+                                                 His competence and reliability make him an ideal candidate to take on any project from start to finish.”</p>
+        
+                                            {% comment %} <a href="#" class="project-btn">Project</a> {% endcomment %}
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="{% static 'assets/images/jay.jpg' %}" alt="portfolio">
+                                                <div class="right">
+                                                    <h3>Joshua Afolayan</h3>
+                                                    <p class="designation">Co - <span>Developer</span></p>
+                                                </div>
+                                            </div>
+                                            <p>“Gabriel's service is exceptionally professional and speedy. He is a highly skilled developer with a strong creative flair.
+                                                 We have completed three projects with him and are certain to continue our collaboration.”</p>
+        
+                                            {% comment %} <a href="#" class="project-btn">Project</a> {% endcomment %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-footer-nav">
+                                    <div class="testimonial-nav d-flex align-items-center">
+                                        <button class="prev"><i class="las la-angle-left"></i></button>
+                                        <div id="testimonial-slide-count"></div>
+                                        <button class="next"><i class="las la-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="pricing-area page-section scroll-to-page" id="pricing">
+                    <div class="custom-container">
+                        <div class="pricing-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-dollar-sign"></i> pricing
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">My <span>Pricing</span></h1>
+                            </div>
+        
+                            <div class="pricing-table-items">
+                                <div class="row">
+                                    <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                        <div class="pricing-table">
+                                            <div class="pricing-table-header">
+                                                <div class="top d-flex justify-content-between align-items-start">
+                                                    <h4>basic</h4>
+                                                    <p class="text-right">have a design already for the website/frontend?<br>
+                                                        or small budget</p>
+                                                </div>
+                                                <h1>$45 <span>/ hours</span></h1>
+                                            </div>
+                                            <ul class="feature-lists">
+                                            <li>Developing the backend functionality using Django and its related libraries.</li>
+                                            <li>Implementing the design using Django templates and CSS.</li>
+                                            <li>Working remotely/online.</li>
+                                            <li>Conducting work on business days, with no weekend work required.</li>
+                                            <li>Providing 3 months of support after completion.</li>
+                                            </ul>
+                                            <a href="#" class="theme-btn">pick this package</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                        <div class="pricing-table">
+                                            <div class="pricing-table-header">
+                                                <div class="top d-flex justify-content-between align-items-start">
+                                                    <h4>premium</h4>
+                                                    <p class="text-right">If you do not have an existing website?<br>
+                                                        Leave its for me</p>
+                                                </div>
+                                                <h1>$85 <span>/ hours</span></h1>
+                                            </div>
+                                            <ul class="feature-lists">
+                                                
+                                                <li>Implementing the design using Django templates, Javascript, HTMX, and  CSS.</li>
+                                                <li>Working remotely/online.</li>
+                                                <li>Developing the backend functionality using Django and its related libraries.</li>
+                                                <li>Remote/Online</li>
+                                                <li>Work with both weekend</li>
+                                                <li>Support 12 months</li>
+                                                <li>Your project alway be priority</li>
+                                                <li>Customer care gifts</li>
+                                            </ul>
+                                            <a href="#" class="theme-btn">pick this package</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="info scroll-animation" data-animation="fade_from_bottom">
+                                    Don't find any package match with your plan!<br>
+                                    Want to setup a new tailor-made package for only you?. <a href="https://wa.me/+2347067208917/?text=Hello%20Gabriel" >
+                                        
+                                Contact Us</a>
+                                </p>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="contact-area page-section scroll-content" id="contact">
+                    <div class="custom-container">
+                        <div class="contact-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-dollar-sign"></i> contact
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Let's Work <span>Together!</span></h1>
+                            </div>
+                            <h3 class="scroll-animation" data-animation="fade_from_bottom">princegeestar@gmail.com</h3>
+                            
+                                    <div class="col-md-12">
+                                        <a href="/contact/" class="theme-btn">
+                                            <i class="las la-envelope"></i> Contact me!
+                                        </a>
+                                   
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.js' %}"></script>
+    <script src="{% static 'assets/js/gsap.min.js' %}"></script>
+    <script src="{% static 'assets/js/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'assets/js/ScrollToPlugin.min.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.min.js' %}"></script>
+    
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/ajax-form.js' %}"></script>
+    <script src="{% static 'assets/js/color.js' %}"></script>
+
+
+    {% comment %} <script>
+        $(document).ready(function() {
+            // messages timeout for 10 sec 
+            setTimeout(function() {
+                $('.container-flui').fadeOut('slow');
+            }, 10000); // <-- time in milliseconds, 1000 =  1 sec
+    
+            // delete message
+            $('.del-msg').live('click',function(){
+                $('.del-msg').parent().attr('style', 'display:none;');
+            })
+        });
+    </script> {% endcomment %}
+</body>
+
+</html>
